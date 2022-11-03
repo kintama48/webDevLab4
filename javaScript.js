@@ -89,23 +89,23 @@ const calculateTip = () => {
 
     switch (checkedServicePercent.id) {
         case ('outstanding'): {
-            percent = 30
+            percent = 0.3
             break;
         }
         case ('good'): {
-            percent = 20
+            percent = 0.2
             break;
         }
         case ('ok'): {
-            percent = 15
+            percent = 0.15
             break;
         }
         case ('bad'): {
-            percent = 10
+            percent = 0.10
             break;
         }
         case ('terrible'): {
-            percent = 5
+            percent = 0.05
             break;
         }
     }
