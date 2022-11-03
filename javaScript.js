@@ -80,3 +80,32 @@ const checkFormInput = () => {
         alert("Fields can't be empty!")
     }
 }
+
+const calculateTip = () => {
+    let amountBilled = parseInt(document.getElementById("amountBilled").value)
+    let checkedServicePercent = document.querySelector('input[name = "servicePercent"]:checked');
+    let numberOfPeople = parseInt(document.getElementById('numberOfPeople').value)
+    let percent;
+
+    switch (checkedServicePercent.id) {
+        case ('outstanding'): {
+            percent = 30
+            break;
+        }
+        case ('good'): {
+            percent = 30
+            break;
+        }
+        case ('ok'): {
+            break;
+        }
+        case ('bad'): {
+            break;
+        }
+        case ('terrible'): {
+            break;
+        }
+    }
+
+    document.getElementById('result3').innerText =
+}

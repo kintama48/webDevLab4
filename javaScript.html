@@ -62,7 +62,7 @@
         </div>
         <br><br><hr>
         <h1>Task 5</h1><br>
-        <form style="border: 1px solid black; padding: 2%; width: 70%">
+        <form style="border: 1px solid black; padding: 2%; width: 70%; margin-left: 15%">
             <div class="form-group" style="width: 30%;">
                 <label for="amountBilled"><b>Total Amount Billed: </b></label>
                 <input type="number" class="form-control" id="amountBilled" aria-describedby="emailHelp" placeholder="Amount Billed...">
@@ -76,30 +76,38 @@
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="servicePercent" id="good" checked>
+                    <input class="form-check-input" type="radio" name="servicePercent" id="good">
                     <label class="form-check-label" for="good">
                         Good
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="servicePercent" id="ok" checked>
+                    <input class="form-check-input" type="radio" name="servicePercent" id="ok">
                     <label class="form-check-label" for="ok">
                         It was okay
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="servicePercent" id="bad" checked>
+                    <input class="form-check-input" type="radio" name="servicePercent" id="bad">
                     <label class="form-check-label" for="bad">
                         Bad
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="servicePercent" id="terrible" checked>
+                    <input class="form-check-input" type="radio" name="servicePercent" id="terrible">
                     <label class="form-check-label" for="terrible">
                         Terrible
                     </label>
                 </div>
-            </div>
-        </form><br><br>
+            </div><br><br>
+            <div class="form-group" style="width: 30%;">
+                <label for="numberOfPeople"><b>Number of People: </b></label>
+                <input type="number" class="form-control" id="numberOfPeople" placeholder="Number of People...">
+            </div><br><br>
+            <button class="btn text-white text-bg-dark" type="button" onclick="calculateTip()">Calculate Tip</button>
+            <br><br>
+            <h3>Tip:</h3>
+            <h2 id="result3" class="text-black" style="border: 1px solid black;height: 50px; text-align: center;"></h2>
+        </form>
     </body>
 </html>
