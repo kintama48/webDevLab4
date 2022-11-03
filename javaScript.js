@@ -93,19 +93,22 @@ const calculateTip = () => {
             break;
         }
         case ('good'): {
-            percent = 30
+            percent = 20
             break;
         }
         case ('ok'): {
+            percent = 15
             break;
         }
         case ('bad'): {
+            percent = 10
             break;
         }
         case ('terrible'): {
+            percent = 5
             break;
         }
     }
 
-    document.getElementById('result3').innerText =
+    document.getElementById('result3').innerText = ((amountBilled * percent)/numberOfPeople).toString()
 }
